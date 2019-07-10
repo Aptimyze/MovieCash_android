@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reward_bg"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_close" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/top_corner_background"
+            android:padding="10dp"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:text="Reward System"
+            android:textColor="@color/yellow"
+            android:textSize="20sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#40FFFFFF"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <jonomoneta.juno.moviecash.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="@color/colorPrimaryDark"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="2"
+                        android:text="CRYPTO/EQUITY ECONOMY AROUND ENTERTAINMENT &amp; GAMING &amp; EDUCATION!"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <jonomoneta.juno.moviecash.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="5dp"
+                        android:shadowColor="@color/colorPrimaryDark"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="2"
+                        android:text="\u25A0  MOVIECASH MILLIONAIRE Live Quiz – play quiz, share stories, enhance lifestyle, win millions.\n\u25A0  ATM LOTTO – have fun and win prizes.\n\u25A0  WORLD'S BEST - Talent Contest - Be a Star! 3 Movies offered!\n\u25A0  Location Base Frequent Reward Program – Enjoy Movies in Theaters, Concerts, Malls, Restaurants, Travel &amp; More and You will be rewarded automatically, as wells as Brands may send you special Discount offers!\n\u25A0  Students - Education is Key to Success in Life! We or our Brands are pleased to offer Special Students Reward Program. Attend Schools/Universities regularly and Accumulate Crypto/Equity. Laptop, Vacation, Subsidy for Tuition fees, Dorm Rental are the rewards for that and much more!\n\u25A0  Redeem Rewards\n - 10 Million JM = Tesla Economy Car ( 30 Installments )\n - 20 Million Jm = 1 Bed Room Apartment( 30 years Mortgage ) The most Basic in city We approve.\n - 35000 JM = Basic Economy Laptop\n\u25A0  Students  only\n - 200000 JM = 70% of dorm Rental for 1 year\n - 25 Million JM = 70% of Tuition fees for 1 Year\n\n*Pl make sure You must be active user of our App during this period with 5 Friends"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <jonomoneta.juno.moviecash.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="5dp"
+                        android:shadowColor="@color/colorPrimaryDark"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="2"
+                        android:text="T shirt to, Vacation to Laptop, Color TV, Bike/Scooter/Cars, Your Tuition Fees and many more Gifts from our sponsors!"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <jonomoneta.juno.moviecash.CustomTextViewBold
+                        android:id="@+id/linkTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="5dp"
+                        android:shadowColor="@color/colorPrimaryDark"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="2"
+                        android:text="www.junomoneta.io link to rewards - for more details."
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

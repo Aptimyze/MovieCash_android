@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_card_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="ATM Lotto result"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/resNo1CB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/number_selector_yellow"
+                android:button="@null"
+                android:checked="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/grey" />
+
+            <CheckBox
+                android:id="@+id/resNo2CB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/number_selector_yellow"
+                android:button="@null"
+                android:checked="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/grey" />
+
+            <CheckBox
+                android:id="@+id/resNo3CB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/number_selector_yellow"
+                android:button="@null"
+                android:checked="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/grey" />
+
+            <CheckBox
+                android:id="@+id/resNo4CB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/number_selector_yellow"
+                android:button="@null"
+                android:checked="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/grey" />
+
+            <CheckBox
+                android:id="@+id/resNo5CB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/number_selector_yellow"
+                android:button="@null"
+                android:checked="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/grey" />
+
+            <CheckBox
+                android:id="@+id/resLuckyNoCB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/number_selector_red"
+                android:button="@null"
+                android:checked="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/no1CB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/number_selector_yellow"
+                android:button="@null"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/grey" />
+
+            <CheckBox
+                android:id="@+id/no2CB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/number_selector_yellow"
+                android:button="@null"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/grey" />
+
+            <CheckBox
+                android:id="@+id/no3CB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/number_selector_yellow"
+                android:button="@null"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/grey" />
+
+            <CheckBox
+                android:id="@+id/no4CB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/number_selector_yellow"
+                android:button="@null"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/grey" />
+
+            <CheckBox
+                android:id="@+id/no5CB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/number_selector_yellow"
+                android:button="@null"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/grey" />
+
+            <CheckBox
+                android:id="@+id/luckyNoCB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/number_selector_red"
+                android:button="@null"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/grey" />
+
+        </LinearLayout>
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/rewardTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:gravity="center"
+            android:text="Congratulations!\nYOu have won JM $ 10000"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/okBTN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background_paynow"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="Ok"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

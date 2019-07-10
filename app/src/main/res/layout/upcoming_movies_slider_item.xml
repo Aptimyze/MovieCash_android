@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/posterIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/movNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cmnt_background_light_yellow"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:id="@+id/synopsisTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:shadowColor="@color/grey"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

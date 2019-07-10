@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="jonomoneta.juno.moviecash.Activity.FilterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:text="OFFER"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_close" />
+
+    </LinearLayout>
+
+    <jonomoneta.juno.moviecash.CustomTextView
+        android:id="@+id/offerDescTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Offer description"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/offerIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <jonomoneta.juno.moviecash.CustomTextViewBold
+        android:id="@+id/playBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_background_yellow"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:padding="10dp"
+        android:shadowColor="@color/grey"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Play ATM Lotto"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

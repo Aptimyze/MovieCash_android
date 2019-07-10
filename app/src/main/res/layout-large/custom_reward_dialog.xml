@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/flag_transparent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="-55dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/closeDialogBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_close"
+            app:civ_circle_background_color="@color/light_grey" />
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:shadowColor="@color/background"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:text="CONGRATULATIONS!"
+            android:textColor="@color/yellow"
+            android:textSize="24sp" />
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="You have completed quiz successfully."
+            android:textColor="@color/grey"
+            android:textSize="19sp" />
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Please claim your prize now."
+            android:textColor="@color/grey"
+            android:textSize="19sp" />
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/claimBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_margin="40dp"
+            android:background="@drawable/btn_background_yellow"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:shadowColor="@color/background"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:text="CLAIM NOW"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <ProgressBar
+            android:id="@+id/claimLoader"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="40dp"
+            android:visibility="gone"
+            android:indeterminateTint="@color/yellow" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_with_border_large"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            app:srcCompat="@drawable/ic_award" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:paddingBottom="240dp"
+    android:background="@drawable/walkthrough_two">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/slider_two_intro"/>
+
+
+</LinearLayout>

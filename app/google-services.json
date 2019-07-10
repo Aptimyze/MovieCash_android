@@ -1,0 +1,125 @@
+{
+  "project_info": {
+    "project_number": "469191560525",
+    "firebase_url": "https://moviecash-341a9.firebaseio.com",
+    "project_id": "moviecash-341a9",
+    "storage_bucket": "moviecash-341a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469191560525:android:6a6a25b20c12707a",
+        "android_client_info": {
+          "package_name": "jonomoneta.juno.moviecash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469191560525-a5sfn0c6as4j7jlta1fv1e8hs058efn9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhPmO4pRhqG5OkkWuBjsNONCM96fZJ-rQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469191560525:android:52019c857272664e",
+        "android_client_info": {
+          "package_name": "movieosis.mdadil2019.movieosis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469191560525-6js7j2evdnvk3j3r6qt142890s8h2n8c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "movieosis.mdadil2019.movieosis",
+            "certificate_hash": "6e2df8f65843f06998e7c401aa47cc939457b0d0"
+          }
+        },
+        {
+          "client_id": "469191560525-h7pdu1t9cpie77ns5kh6b01hsbm91le7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "movieosis.mdadil2019.movieosis",
+            "certificate_hash": "c075c06d6ba43ab198719302a1271f53edab227d"
+          }
+        },
+        {
+          "client_id": "469191560525-296dvr4h6cias6fmk9isi6nffsjq8t8i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "movieosis.mdadil2019.movieosis",
+            "certificate_hash": "1e73b29dfe17f3601ea4a00b4196c8ca05d77a59"
+          }
+        },
+        {
+          "client_id": "469191560525-jmrvc412iraj64e55rfqk9in116ptun8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "movieosis.mdadil2019.movieosis",
+            "certificate_hash": "5e1be54ae76379daa551b368e20729aa7a85886d"
+          }
+        },
+        {
+          "client_id": "469191560525-saevo4qlo4vca01gudihfj44omi6dv4r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "movieosis.mdadil2019.movieosis",
+            "certificate_hash": "473a780f79bc6ce5af367eac72b687dfd4cba483"
+          }
+        },
+        {
+          "client_id": "469191560525-a5sfn0c6as4j7jlta1fv1e8hs058efn9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhPmO4pRhqG5OkkWuBjsNONCM96fZJ-rQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469191560525-a5sfn0c6as4j7jlta1fv1e8hs058efn9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "469191560525-np58oa83kdo74up6g0m4rgfsluagedjo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.headsup7.Movie-Cash"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

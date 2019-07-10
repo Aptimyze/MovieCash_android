@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/radGrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <jonomoneta.juno.moviecash.CustomRadioButton
+                android:id="@+id/ansOneRB"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="1. xyz"
+                android:textColor="@color/background"
+                android:textSize="28sp" />
+
+            <jonomoneta.juno.moviecash.CustomRadioButton
+                android:id="@+id/ansTwoRB"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="1. xyz"
+                android:textColor="@color/background"
+                android:textSize="28sp" />
+
+            <jonomoneta.juno.moviecash.CustomRadioButton
+                android:id="@+id/ansThreeRB"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="1. xyz"
+                android:textColor="@color/background"
+                android:textSize="28sp" />
+
+            <jonomoneta.juno.moviecash.CustomRadioButton
+                android:id="@+id/ansFourRB"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="1. xyz"
+                android:textColor="@color/background"
+                android:textSize="28sp" />
+
+            <jonomoneta.juno.moviecash.CustomRadioButton
+                android:id="@+id/ansFiveRB"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="1. xyz"
+                android:textColor="@color/background"
+                android:textSize="28sp" />
+
+        </RadioGroup>
+    </ScrollView>
+
+    <jonomoneta.juno.moviecash.CustomEditText
+        android:id="@+id/answerET"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:background="@drawable/unchecked_answer"
+        android:gravity="top"
+        android:hint="Enter your answer here."
+        android:maxLength="1000"
+        android:padding="20dp"
+        android:textColor="@color/background"
+        android:textSize="28sp"
+        android:visibility="gone" />
+</LinearLayout>

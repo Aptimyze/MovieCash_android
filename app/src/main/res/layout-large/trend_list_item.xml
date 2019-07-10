@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/thumbIV"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:layout_margin="7dp"
+            android:padding="1dp"
+            android:background="@color/background"
+            android:src="@drawable/vw_ic_video_camera" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:id="@+id/nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="User name"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:id="@+id/mobNoTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="Mobile no."
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_like" />
+
+                <TextView
+                    android:id="@+id/likeCountTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="0"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/ic_dislike" />
+
+                <TextView
+                    android:id="@+id/disLikeCountTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="0"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

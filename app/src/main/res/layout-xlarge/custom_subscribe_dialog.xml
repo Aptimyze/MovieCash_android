@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/subs_dialog_banner"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginBottom="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_giftbox" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:background="@drawable/subscribe_dialog_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="75dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/yellow" />
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/titleTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:shadowColor="@color/grey"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="SUBSCRIBE"
+                android:textColor="@color/grey"
+                android:textSize="30sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:id="@+id/subs_descTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:lineSpacingExtra="9dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:text="- Subscribe MovieCash Millionaire.\n- $ 10 / month."
+                android:textColor="@color/grey"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@drawable/btn_background_two">
+
+                <jonomoneta.juno.moviecash.CustomEditText
+                    android:id="@+id/refferalCodeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Referral code (Optional)"
+                    android:imeOptions="actionDone"
+                    android:padding="25dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/subscribeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_background_yellow"
+                android:elevation="15dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:shadowColor="@color/grey"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="SUBSCRIBE NOW"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/closeBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_close"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="@color/yellow" />
+
+</RelativeLayout>

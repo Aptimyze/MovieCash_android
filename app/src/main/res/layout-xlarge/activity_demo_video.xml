@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jonomoneta.juno.moviecash.Activity.DemoVideoActivity">
+
+    <VideoView
+        android:id="@+id/demoVideoVIew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loader"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:indicatorName="SquareSpinIndicator"
+        android:layout_centerInParent="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/closeBTN"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:src="@drawable/ic_close"
+        app:civ_circle_background_color="#35707070" />
+
+</RelativeLayout>

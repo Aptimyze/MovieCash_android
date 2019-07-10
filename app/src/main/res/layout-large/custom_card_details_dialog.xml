@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_detail_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/corner_top_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:shadowColor="@color/grey"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:text="Card Details"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/closeBtn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_close"
+                app:civ_circle_background_color="#35707070" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/CardWidgetStyleLarge"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small.Inverse">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/cardNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light"
+                android:hint="Name on card"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/CardWidgetStyleLarge"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small.Inverse">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light"
+                android:hint="Email id"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.stripe.android.view.CardMultilineWidget
+            android:id="@+id/cardDetailWidget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/CardWidgetStyleLarge" />
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/payNowBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_background_paynow"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:shadowColor="@color/grey"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:text="PAY NOW"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+    <!--android:id="@+id/action_settings"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="@string/action_settings"-->
+    <!--app:showAsAction="never" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/action_promo_code"-->
+    <!--android:title="@string/promo_code"-->
+    <!--app:showAsAction="never" />-->
+
+
+
+    <item
+        android:id="@+id/action_refer"
+        android:icon="@drawable/ic_invite_friend"
+        android:title="Invite Friends" />
+
+    <item
+        android:id="@+id/action_redeem"
+        android:icon="@drawable/redeem_black"
+        android:title="Redeem" />
+
+
+</menu>

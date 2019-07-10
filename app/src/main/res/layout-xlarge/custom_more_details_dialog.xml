@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light_grey_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/medium_grey_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:shadowColor="@color/white"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="WORLDS BEST"
+                android:textColor="@color/grey"
+                android:textSize="30sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/closeBtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_close"
+                app:civ_circle_background_color="#35707070" />
+        </LinearLayout>
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:lineSpacingExtra="10dp"
+            android:padding="20dp"
+            android:text="&#11044;  MILLION $ Opportunity, MILLION  $ Contracts -Gateway  to Hollywood &amp; Bollywood.\n&#11044;  Actors / Models, Musicians, Singers, Script / Story writers, Hosts, Make up / Hair Stylists, Cinema Photographers, Directors.\n&#11044;  Movies, Quiz shows, Fashion shows / Print, Web series. \n&#11044;  Compete now! Prove that you deserve this, Competition is on now! All participants will be rewarded $\n&#11044;  No entry fees, Subscription needed for Channel.\n&#11044;  Upcoming Movies - Actors / Models  &amp; all others.\n&#11044;  Moviecash Millionaire -  Models ( Fashion show - host)."
+            android:textColor="@color/grey"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

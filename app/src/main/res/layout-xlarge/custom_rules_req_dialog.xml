@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light_grey_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/medium_grey_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:shadowColor="@color/white"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="RULES &amp; REQUIREMENTS"
+                android:textColor="@color/grey"
+                android:textSize="30sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/closeBtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_close"
+                app:civ_circle_background_color="#35707070" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <jonomoneta.juno.moviecash.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&#11044;  NEW FACES: Models &amp; Actors - Video"
+                    android:textColor="@color/grey"
+                    android:textSize="22sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo"
+                    android:layout_margin="10dp"
+                    android:lineSpacingExtra="10dp"
+                    android:text="-  Women videos must be wearing a two-piece bathing suits.\n-  Women must be at least 5’7″.\n-  Men must be wearing swimming trunks.\n-  Men must be at least 5’8″.\n-  Age 18  to 26.\n-  No posing.\n-  No make up or hairspray ( One video ) Rest in all videos you can present your self with Make up, Hair styles, Cat walk, different acting videos, dialogue.\n-  Atleast 15 videos in every week you must load(MINIMUM) more ,no limit.\n-  For all videos you post, You will earn $ JM.\n-  No nudity, NO SELFIES."
+                    android:textColor="@color/background"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_grey"/>
+
+                <jonomoneta.juno.moviecash.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="&#11044;  COMMERCIAL MODELS / ACTORS ( Matured )"
+                    android:textColor="@color/grey"
+                    android:textSize="22sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo"
+                    android:layout_margin="10dp"
+                    android:lineSpacingExtra="10dp"
+                    android:text="-  No age limit.\n-  Women must be at least 5’7″.\n-  Men must be at least 5’7″.\n-  Must be fit.\n-  NO SELFIES.\n-  Regarding videos same requirements applied as in new faces section."
+                    android:textColor="@color/background"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_grey"/>
+
+                <jonomoneta.juno.moviecash.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="&#11044;  MUSICIANS"
+                    android:textColor="@color/grey"
+                    android:textSize="22sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo"
+                    android:layout_margin="10dp"
+                    android:lineSpacingExtra="10dp"
+                    android:text="-  Please send original tunes &amp; singing or only music with videos.\n-  Perform like you are performing on stage.\n-  3 videos minimum a week, no limit for max.\n-  For all videos you will be rewarded $ JM."
+                    android:textColor="@color/background"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_grey"/>
+
+                <jonomoneta.juno.moviecash.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="&#11044;  SINGERS"
+                    android:textColor="@color/grey"
+                    android:textSize="22sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo"
+                    android:layout_margin="10dp"
+                    android:lineSpacingExtra="10dp"
+                    android:text="-  Original singing only.\n-  You must have copyright, don't use anybody else's songs.\n-  15 videos minimum a week, more no restrictions.\n-  Perform like you are performing on stage.\n-  All videos will be rewarded with $ JM."
+                    android:textColor="@color/background"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_grey"/>
+
+                <jonomoneta.juno.moviecash.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="&#11044;  MAKE UP / HAIR ARTIST"
+                    android:textColor="@color/grey"
+                    android:textSize="22sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo"
+                    android:layout_margin="10dp"
+                    android:lineSpacingExtra="10dp"
+                    android:text="-  15 videos a week minimum, with different styles &amp; get up."
+                    android:textColor="@color/background"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_grey"/>
+
+                <jonomoneta.juno.moviecash.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="&#11044;  STORY / SCRIPT WRITERS"
+                    android:textColor="@color/grey"
+                    android:textSize="22sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo"
+                    android:layout_margin="10dp"
+                    android:lineSpacingExtra="10dp"
+                    android:text="-  Tell your stories and keep us engaged!\n-  You will be rewarded $ JM just to participate!"
+                    android:textColor="@color/background"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

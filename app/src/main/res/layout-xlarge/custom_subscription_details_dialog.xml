@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_detail_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Subscription Details"
+            android:textColor="@color/yellow"
+            android:textSize="32sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/yellow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subscribed on : "
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/startDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/light"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ending on : "
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/endDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/light"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/okBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_background_paynow"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:shadowColor="@color/grey"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

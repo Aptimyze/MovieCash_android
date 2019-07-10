@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="jonomoneta.juno.moviecash.Activity.PredictionActivity">
+
+    <RelativeLayout
+        android:id="@+id/quizbackgroundRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/quiz_bg_poster"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/diamondLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/key_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/diamond" />
+
+                <TextView
+                    android:id="@+id/availableDiamondTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/grey"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/addKeyBtn"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="10dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/ic_add"
+                    android:tint="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subscribeLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <jonomoneta.juno.moviecash.CustomTextViewBold
+                    android:id="@+id/subsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/btn_background_change_card"
+                    android:gravity="center"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="55dp"
+                    android:paddingBottom="15dp"
+                    android:text="SUBSCRIBE"
+                    android:textColor="@color/grey"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/subsIv"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="-45dp"
+                    android:background="@drawable/subscribe_round_background"
+                    android:padding="28dp"
+                    android:src="@drawable/ic_click"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/closeBTN"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="25dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/ic_close"
+                    app:civ_circle_background_color="#35707070" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/walletLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-35dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/key_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:padding="7dp"
+                android:src="@drawable/ic_wallet" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/endorseBTN"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/walletLL"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/grey_transparent_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/endorse"
+                android:tint="@color/white" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/buzzerBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/endorseBTN"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/golden_buzzer"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/helpLL"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="110dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/grey_transparent_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/helpBTN"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_help" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/quick_quiz_logo" />
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/prizeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/yellow"
+            android:textSize="34sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/quizTimeLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prizeTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Next Quiz"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/quizTimeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_background_yellow"
+                android:gravity="center"
+                android:paddingLeft="35dp"
+                android:paddingTop="10dp"
+                android:paddingRight="35dp"
+                android:paddingBottom="10dp"
+                android:shadowColor="@color/grey"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="12-01-2019, 12:00 pm"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/countDownLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quizTimeLL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Starting in"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="13dp">
+
+                <LinearLayout
+                    android:id="@+id/daysLL"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_background_two"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:visibility="visible">
+
+                    <jonomoneta.juno.moviecash.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DAYS"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <jonomoneta.juno.moviecash.CustomTextViewBold
+                        android:id="@+id/daysTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="36sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_background_two"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <jonomoneta.juno.moviecash.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HOURS"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <jonomoneta.juno.moviecash.CustomTextViewBold
+                        android:id="@+id/hoursTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="36sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btn_background_two"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <jonomoneta.juno.moviecash.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MINUTES"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <jonomoneta.juno.moviecash.CustomTextViewBold
+                        android:id="@+id/minsTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="36sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btn_background_two"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <jonomoneta.juno.moviecash.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SECONDS"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <jonomoneta.juno.moviecash.CustomTextViewBold
+                        android:id="@+id/secTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="36sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="188dp"
+            android:lineSpacingExtra="7dp"
+            android:padding="35dp"
+            android:shadowColor="@color/grey"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="\u25CF  RULES\n\u25AA You will have 10 seconds to answer each question.\n\u25AA Once quiz started, can't leave otherwise eliminated.\n\u25AA The questions shall be in the form of multiple choice for answers.\n\u25AA All answers need to be correct to move to next round.\n\u25AA Once you select any answer will be considered as your final answer and can't change.\n\u25AA Successful completion of 7 levels needed to win potentially Bigger Prize/Rewards."
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/reminderBTN"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/helpLL"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/btn_background_pink"
+            android:padding="10dp"
+            android:src="@drawable/ic_alarm"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/btnInvite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/linkLL"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_background_paynow"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp">
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="INVITE FRIENDS"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45dp"
+                android:src="@drawable/share" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linkLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="125dp"
+            android:orientation="horizontal">
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:id="@+id/rulesTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="right"
+                android:padding="25dp"
+                android:shadowColor="@color/grey"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="@string/rules"
+                android:textColor="@color/dark_sky"
+                android:textSize="24sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:id="@+id/privacyTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="25dp"
+                android:shadowColor="@color/grey"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="@string/privacy"
+                android:textColor="@color/dark_sky"
+                android:textSize="24sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:id="@+id/termsTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="25dp"
+                android:shadowColor="@color/grey"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="@string/terms"
+                android:textColor="@color/dark_sky"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/playNowBtn"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_background_yellow"
+            android:clickable="false"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:shadowColor="@color/grey"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="Coming soon..."
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/playLoader"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:indeterminateTint="@color/yellow"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/ic_back" />
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/countTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="75dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/videoViewRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="420dp" />
+
+            <ProgressBar
+                android:id="@+id/videoLoader"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/grey"
+            app:cardCornerRadius="16dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <jonomoneta.juno.moviecash.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RULES"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <jonomoneta.juno.moviecash.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="7dp"
+                        android:text="1. Quiz questions will be available after the completion of this video.\n2. You will have 10 seconds to answer each questions.\n3. You can not leave this quiz now, if you leave then you will be eliminated from this quiz and can not play this quiz again.\n4. The questions shall be in form of multiple choice answer. \n5. To win this quiz, all the answers must be correct.\n6. Once you select any answer will be considered as you final answer and can't change.\n7. To win this quiz, select answer as soon as possible.\n8. If you fail to answer in time limit then you will be eliminated from the quiz."
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/streamRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/parentRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey">
+
+            <RelativeLayout
+                android:id="@+id/videoSurfaceRL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.bambuser.broadcaster.SurfaceViewWithAutoAR
+                    android:id="@+id/videoSurfaceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/videoSurfaceRL2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <com.bambuser.broadcaster.SurfaceViewWithAutoAR
+                    android:id="@+id/videoSurfaceView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/streamSurfaceRL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <com.bambuser.broadcaster.SurfaceViewWithAutoAR
+                    android:id="@+id/streamSurfaceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/storySurfaceRL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <com.bambuser.broadcaster.SurfaceViewWithAutoAR
+                    android:id="@+id/storySurfaceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="25dp">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/showStoryBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_background"
+                android:padding="10dp"
+                android:text="START"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_profile" />
+
+            <TextView
+                android:id="@+id/onlineUserTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:shadowColor="@color/grey"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/diamondStreamLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/key_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@drawable/diamond" />
+
+            <TextView
+                android:id="@+id/availableStreamDiamondTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/grey"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/addKeyBtnStream"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@drawable/ic_add"
+                android:tint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/questionLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/question_background"
+            android:orientation="vertical"
+            android:padding="40dp"
+            android:visibility="gone">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/streamQueTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Q. Question example.?"
+                android:textColor="@color/grey"
+                android:textSize="29sp" />
+
+            <LinearLayout
+                android:id="@+id/ansCountLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/correctCountPB"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/correct_custom_progress" />
+
+                    <TextView
+                        android:id="@+id/correctCountTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="@color/grey"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <ProgressBar
+                        android:id="@+id/wrongCountPB"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/wrong_custom_progress" />
+
+                    <TextView
+                        android:id="@+id/wrongCountTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="@color/grey"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radGrp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:id="@+id/ansOneRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/prediction_selector"
+                    android:button="@null"
+                    android:elevation="7dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="1. xyz"
+                    android:textColor="@color/grey"
+                    android:textSize="29sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:id="@+id/ansTwoRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/prediction_selector"
+                    android:button="@null"
+                    android:elevation="7dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="1. xyz"
+                    android:textColor="@color/grey"
+                    android:textSize="29sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:id="@+id/ansThreeRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/prediction_selector"
+                    android:button="@null"
+                    android:elevation="7dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="1. xyz"
+                    android:textColor="@color/grey"
+                    android:textSize="29sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:id="@+id/ansFourRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/prediction_selector"
+                    android:button="@null"
+                    android:elevation="7dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="1. xyz"
+                    android:textColor="@color/grey"
+                    android:textSize="29sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:id="@+id/ansFiveRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/prediction_selector"
+                    android:button="@null"
+                    android:elevation="7dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="1. xyz"
+                    android:textColor="@color/grey"
+                    android:textSize="29sp" />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:id="@+id/timerRL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+
+                <ProgressBar
+                    android:id="@+id/streamTimeLoader"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_shape"
+                    android:indeterminate="false"
+                    android:max="20"
+                    android:min="0"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/custom_progressbar_drawable_xlarge" />
+
+                <jonomoneta.juno.moviecash.CustomTextViewBold
+                    android:id="@+id/streamTimerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/grey"
+                    android:textSize="32sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/noWinnerTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:shadowColor="@color/grey"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="No winner found for this quiz."
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/winnersLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/viewAllTV"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:shadowColor="@color/grey"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="WINNERS"
+                android:textColor="@color/white"
+                android:textSize="43sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/winnersRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="360dp" />
+
+
+        </LinearLayout>
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:id="@+id/viewAllTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="right"
+            android:layout_marginBottom="30dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="20dp"
+            android:shadowColor="@color/grey"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="VIEW ALL"
+            android:textColor="@color/colorAccent"
+            android:textSize="29sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/adRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:visibility="gone">
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:id="@+id/adTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="25dp"
+                android:text="Ad."
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+        </RelativeLayout>
+
+        <VideoView
+            android:id="@+id/adVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/background"
+            android:visibility="gone" />
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:id="@+id/loadingAdTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Loading advertisement..."
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/prediction_bg"
+        android:fillViewport="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="90dp">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/questionTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="14dp">
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:id="@+id/descTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="40dp"
+                    android:text="You will get 10 seconds to answer each questions."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="32sp" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loader"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/background"
+                    app:indicatorName="LineSpinFadeLoaderIndicator" />
+
+                <jonomoneta.juno.moviecash.PredictionCustomViewPager
+                    android:id="@+id/predictionViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/question_background"
+                    android:visibility="gone" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp">
+
+
+                    <ProgressBar
+                        android:id="@+id/timeLoader"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_centerInParent="true"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:min="0"
+                        android:progress="10"
+                        android:progressDrawable="@drawable/custom_progressbar_drawable_xlarge" />
+
+                    <jonomoneta.juno.moviecash.CustomTextViewBold
+                        android:id="@+id/timerTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="34sp" />
+
+                </RelativeLayout>
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loaderTwo"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/colorAccent"
+                    app:indicatorName="LineSpinFadeLoaderIndicator" />
+
+                <jonomoneta.juno.moviecash.CustomTextViewBold
+                    android:id="@+id/nextBtn"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_background_two"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="Next"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="32sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

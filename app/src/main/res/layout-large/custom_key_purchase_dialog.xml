@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/flag_transparent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/white_corner_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/closeDialogBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_close"
+            app:civ_circle_background_color="#35707070" />
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/life_descTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:shadowColor="@color/background"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:text="PURCHASE LIFELINE\n($ 0.5 / life )"
+            android:textColor="@color/yellow"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_margin="40dp"
+            android:orientation="horizontal">
+
+            <jonomoneta.juno.moviecash.CustomEditText
+                android:id="@+id/qtyET"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_corner_background"
+                android:gravity="center"
+                android:hint="No. of life"
+                android:inputType="number"
+                android:maxLength="5"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textColorHint="@color/light"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/purchaseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/cmnt_background_yellow"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:shadowColor="@color/background"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:singleLine="true"
+                android:text="BUY"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_with_border_large"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/diamond" />
+    </RelativeLayout>
+
+</RelativeLayout>

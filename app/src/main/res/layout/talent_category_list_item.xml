@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_margin="3dp">
+
+    <ImageView
+        android:id="@+id/iconIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:padding="5dp" />
+
+    <jonomoneta.juno.moviecash.CustomTextView
+        android:id="@+id/nameTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_background_two"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:padding="5dp"
+        android:shadowColor="@color/grey"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+</RelativeLayout>

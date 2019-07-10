@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <jonomoneta.juno.moviecash.CustomCheckBox
+        android:id="@+id/categoryCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/checkbox_selector"
+        android:button="@null"
+        android:checked="false"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="8dp"
+        android:text="comedy"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</LinearLayout>

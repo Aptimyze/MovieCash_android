@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">MovieCash</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="YOUTUBE_API_KEY">AIzaSyA1dzkv3ro5l0Fr5RjE73tXTsQAhJGR8rg</string>
+    <string name="API_READ_TOKEN">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNGQ3ODg3NDBiZWVjOTczN2RkZDk0YTBlNzZmNDFjNiIsInN1YiI6IjViNzJmOWQwOTI1MTQxNDA1NjE3OWJkYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dTx1MCJfgw2ZBu2Y-RSIabVEli1L5sDl9KjfumcAb1I</string>
+    <string name="MOVIE_DB_API_KEY">14d788740beec9737ddd94a0e76f41c6</string>
+    <string name="PLACES_API_KEY">AIzaSyDilAKJ_vJ3rCCxR34RsEa2nyK3S2h6gL0</string>
+    <string name="channel_name">TypeDetectorChannel</string>
+    <string name="channel_description">This notification channel will help to detect type of place user is located in</string>
+    <string name="number_picker_formatter"></string>
+    <string name="final_time">00 : 00 : 00</string>
+    <string name="privacy_policy1">By signing up, I confirm I am over 18 years old, and I agree to MovieCash
+        <a href="https://www.junomoneta.io/movie-cash"> privacy policy </a>and terms of service.
+    </string>
+    <string name="hint_mobile_number">Your mobile number</string>
+    <string name="note_verify_number">We will send text to verify your number</string>
+    <string name="get_started">Get Started</string>
+    <string name="next">NEXT</string>
+    <string name="promo_code">Have a Promo Code?</string>
+    <string name="desc_slider3">So you love watching movies, Why don\'t make your time more valuable by getting $ or equity while enjoying movies in theater!</string>
+    <string name="desc_slider1">Do you like watching movies?  Why don\'t watch them for earning $ or equity in theaters. Using MovieCash, you can watch movies in theater and earn $ or equity</string>
+    <string name="desc_slider2">Excited about trailers of your favorite movie?  Get all trailers of released and upcoming movies in your hands and earn money by watching them!</string>
+
+
+    <string name="slider_one_intro">Do you like watching movies? \n why don\'t watch them for earning $ or equity in theaters. Using MovieCash, you can watch movies in theater and earn $ or equity.</string>
+    <string name="slider_two_intro">Excited about trailers of your favorite movie? \n Get all trailers of released and upcoming movies in your hands and earn money by watching them!</string>
+    <string name="slider_three_intro">So you love watching movies, why don\'t make your time more valuable by getting $ or equity while enjoying movie in theater!</string>
+    <string name="send_text">We will send text to verify your number.</string>
+    <string name="privacy_policy">By signing up, I confirm that I am over 18 years old, and I agree to MovieCash privacy policy and tearms of services.</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp_desc"><![CDATA[Do you get an SMS OTP ? Enter it below & get start now.]]></string>
+    <string name="resend_otp">Resend OTP ?</string>
+    <string name="start_now">START NOW</string>
+    <string name="profile">PROFILE</string>
+    <string name="category">Genres</string>
+    <string name="edit_prof">EDIT PROFILE</string>
+    <string name="filter">FILTERS</string>
+    <string name="basic">BASIC:\nRequirement: $150 JM\nReward: Coffee</string>
+    <string name="gold"><b>GOLD:</b>\n$300 JM (Junomoneta Rewards $) will earn you equity or in APP purchases of dinner/lunch for 2, after 3 months of engaged use of APP.</string>
+    <string name="premium"><b>PREMIUM:</b>\n$600 JM (Junomoneta Rewards $) will earn you equity or Free Economic class air ticket to Miami for USA residents and for Indian residents 1 economic class air ticket or ticket on Angriya – India’s first cruise ship to Goa. Must be engaged viewer for 8 months.</string>
+    <string name="luxury"><b>LUXURY:</b>\n1) $1500 JM = one 50" color TV anywhere in world.\n2) Or 2 tickets Angriya, India’s first luxury cruise ship Tickets economy class to Goa from Mumbai and 1 night stay in Hotel in Goa for residents in India.\n3) Or 2 cruise tickets from Miami to Bahams for US residents. $1500 JM = 1 Mediterranean cruise tickets For Romania /European residents. Must be engaged viewer for 1 year or 1 economy Air ticket from Bucharest to Milan /uk.</string>
+    <string name="americans"><u>Americans: </u></string>
+    <string name="nep_ind"><u>Nepalese and Indians: </u></string>
+    <string name="roman"><u>Romanians: </u></string>
+    <string name="generateQr">Generate QR code</string>
+    <string name="view_more"><u>Tearms &amp; Privacy policy</u></string>
+    <string name="view_receipt"><u>View receipt</u></string>
+    <string name="rules"><u>Rules</u></string>
+    <string name="privacy"><u>Privacy</u></string>
+    <string name="terms"><u>Terms</u></string>
+    <string name="terms_of_use"><u>Terms of use</u></string>
+    <string name="rules_req"><u>Rules &amp; Requirements</u></string>
+
+</resources>

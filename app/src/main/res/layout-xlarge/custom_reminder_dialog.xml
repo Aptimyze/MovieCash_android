@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_corner_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Set reminder"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="You will get notification before 5 minutes of quiz time."
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:padding="25dp">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/cancelBTN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:text="Cancel"
+                android:textColor="@color/pink"
+                android:textSize="32sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/cnfrmBTN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background_pink"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:text="Confirm"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

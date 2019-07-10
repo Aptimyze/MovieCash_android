@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="jonomoneta.juno.moviecash.Activity.SelectLottoNumbersActivity">
+
+    <LinearLayout
+        android:id="@+id/titleLL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/grey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_back" />
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:text="ATM Lotto"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:scaleType="fitXY"
+            android:src="@drawable/lotto_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:id="@+id/descTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Pick any 5 numbers you like."
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/numbersRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/luckyNumbersRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/selectedBallRV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp" />
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/cntinueBTN"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/btn_background_paynow"
+                android:gravity="center"
+                android:shadowColor="@color/grey"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="jonomoneta.juno.moviecash">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.OfferNotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LottoHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LottoResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SelectLottoNumbersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.InATheaterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DemoVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Activity.TalentUserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.WorldsBestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.IntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".Activity.MobileNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.VerifyOTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".services.NotificationsService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.HistoryService"
+            android:enabled="true">
+
+        </service>
+
+        <receiver android:name=".BroadCastReceiver" />
+        <receiver android:name=".AlarmReceiver" />
+
+        <activity
+            android:name=".Activity.RefferalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PredictionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.RedeemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ClaimPrizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.WinnersActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

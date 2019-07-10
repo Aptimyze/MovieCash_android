@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/btn_color"
+            android:gravity="center"
+            android:shadowColor="@color/grey"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="Please fill your details."
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Full name"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+            <jonomoneta.juno.moviecash.CustomEditText
+                android:id="@+id/fullNameET"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_background_two"
+                android:hint="Enter full name"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/light_grey"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+            <jonomoneta.juno.moviecash.CustomEditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_background_two"
+                android:hint="Enter email"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/light_grey"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Address"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+            <jonomoneta.juno.moviecash.CustomEditText
+                android:id="@+id/addressET"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_background_two"
+                android:hint="Enter complete address"
+                android:paddingLeft="5dp"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/light_grey"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Mobile no."
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:id="@+id/mobileNoTV"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_background_two"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="+919876543210"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/light_grey"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp">
+
+                <jonomoneta.juno.moviecash.CustomTextViewBold
+                    android:id="@+id/cancelTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="CANCEL"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextViewBold
+                    android:id="@+id/redeemTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_background"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:shadowColor="@color/grey"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="REDEEM"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <ProgressBar
+                    android:id="@+id/loader"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:indeterminateTint="@color/btn_color"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

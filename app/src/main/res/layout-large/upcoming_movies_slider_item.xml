@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/movNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cmnt_background_light_yellow"
+                android:padding="15dp"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:id="@+id/synopsisTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:lineSpacingExtra="7dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:shadowColor="@color/grey"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <jonomoneta.juno.moviecash.CustomTextView
+        android:id="@+id/categoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/checkbox_selector"
+        android:button="@null"
+        android:checked="false"
+        android:gravity="center"
+        android:paddingBottom="13dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="13dp"
+        android:text="comedy"
+        android:textSize="22sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

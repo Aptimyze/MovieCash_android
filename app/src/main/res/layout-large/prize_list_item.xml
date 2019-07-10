@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/levelTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/grey"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.3dp"
+            android:layout_height="40dp"
+            android:background="@color/light_grey" />
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/quizNameTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="GAME NAME"
+            android:textColor="@color/grey"
+            android:textSize="22sp" />
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/claimBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background_yellow"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="13dp"
+            android:shadowColor="@color/grey"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:text="CLAIM"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/loaderRL"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/loader"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:indicatorName="LineSpinFadeLoaderIndicator" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

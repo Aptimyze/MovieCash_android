@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="jonomoneta.juno.moviecash.Activity.LottoHistoryActivity">
+
+    <LinearLayout
+        android:id="@+id/titleLL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/grey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_back" />
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:shadowColor="@color/background"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="ATM Lotto"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/historyGV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:numColumns="1"
+            android:verticalSpacing="10dp" />
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:id="@+id/noDataTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No history found."
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loader"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:indicatorColor="@color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
