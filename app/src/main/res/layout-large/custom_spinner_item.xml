@@ -11,17 +11,15 @@
         android:button="@null"
         android:checked="false"
         android:gravity="center_vertical"
-        android:paddingBottom="10dp"
-        android:paddingLeft="13dp"
-        android:paddingRight="13dp"
-        android:paddingTop="10dp"
-        android:text="comedy"
-        android:textSize="22sp"
-        android:textColor="@color/background" />
+        android:padding="15dp"
+        android:text="type"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary" />
 
     <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="1.3dp"
-        android:background="@color/background"/>
+        android:layout_height="0.8dp"
+        android:background="@color/light_grey"/>
 
 </LinearLayout>

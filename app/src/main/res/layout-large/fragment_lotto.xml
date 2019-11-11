@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:lineSpacingExtra="7dp"
-            android:text="&#11044;  PLAY FREE &amp; BE A MILLIONAIRE\n&#11044;  Everyday 8:30 PM its so much of fun &amp; excitements.\n&#11044;  JM $ can change your fortune!\n&#11044;  1 million everyday, Saturday JM $ 5 Million!"
+            android:text="&#11044;  Its so much of fun &amp; excitements.\n&#11044;  Win JM $/Equity, Change your fortune!\n&#11044;  $1 M Jm/Equity everyday, Saturday $5 M JM/Equity!"
             android:textColor="@color/white"
             android:textSize="14sp" />
 

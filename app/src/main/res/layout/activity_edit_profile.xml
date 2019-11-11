@@ -288,39 +288,4 @@
         android:layout_height="1dp"
         android:background="@color/colorAccent" />
 
-    <jonomoneta.juno.moviecash.CustomTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:paddingLeft="20dp"
-        android:text="@string/category"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
-
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/catTV"
-        android:layout_marginTop="5dp"
-        android:fillViewport="true"
-        android:scrollbarSize="1dp"
-        android:scrollbarThumbVertical="@color/colorAccent"
-        android:scrollbars="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/categoryGridView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp" />
-
-
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
 </LinearLayout>

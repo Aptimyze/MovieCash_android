@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/mainLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_dialog_background"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iconIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:src="@drawable/marker_large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+                <jonomoneta.juno.moviecash.CustomTextViewBold
+                    android:id="@+id/nameTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:id="@+id/distanceTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="distance"
+                    android:padding="5dp"
+                    android:textColor="@color/light_grey"
+                    android:textSize="12sp" />
+
+                <jonomoneta.juno.moviecash.CustomTextView
+                    android:id="@+id/addressTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="address"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:id="@+id/remainTimeTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:hint="Come again after 10 mins."
+            android:padding="2dp"
+            android:textColor="@color/light_grey"
+            android:textSize="8sp"
+            android:visibility="gone" />
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/earnBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/yellow_bottom_corner"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Check-in &amp; Earn"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/errorLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_dialog_background"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <jonomoneta.juno.moviecash.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:padding="15dp"
+            android:text="Oops, you have reached daily limit! (15 per day)\nPlease try again tomorrow."
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/okBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/yellow_bottom_corner"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Ok"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

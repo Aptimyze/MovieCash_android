@@ -50,12 +50,11 @@
                 android:visibility="gone" />
 
             <ImageView
-                android:id="@+id/pollBtn"
+                android:id="@+id/qrBTN"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:padding="15dp"
-                android:src="@drawable/ic_qa"
-                android:visibility="gone" />
+                android:padding="17dp"
+                android:src="@drawable/ic_qr_code" />
 
             <ImageView
                 android:id="@+id/menuBtn"

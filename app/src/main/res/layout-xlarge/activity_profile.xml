@@ -82,8 +82,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginTop="70dp"
-            android:visibility="invisible"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="invisible">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -236,41 +236,43 @@
         app:civ_border_color="@color/btn_color"
         app:civ_border_width="4dp" />
 
-    <jonomoneta.juno.moviecash.CustomTextView
-        android:id="@+id/catTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/detailsLL"
-        android:layout_marginTop="25dp"
-        android:paddingLeft="20dp"
-        android:text="@string/category"
-        android:textColor="@color/white"
-        android:textSize="30sp" />
-
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedSCrollView"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/catTV"
-        android:layout_marginTop="15dp"
-        android:fillViewport="true"
-        android:scrollbarSize="3dp"
-        android:scrollbarThumbVertical="@color/colorAccent"
-        android:scrollbars="vertical">
+        android:layout_below="@id/detailsLL"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="480dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/categoryGridView"
+            <TextView
+                android:id="@+id/movOneIMG"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/catTV"
-                android:layout_weight="1" />
+                android:layout_margin="5dp"
+                android:background="@drawable/movie_one" />
+        </androidx.cardview.widget.CardView>
 
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="480dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/movTwoIMG"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/movie_two" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
 
 </RelativeLayout>

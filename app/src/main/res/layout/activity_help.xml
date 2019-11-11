@@ -33,7 +33,7 @@
             android:background="@drawable/help_list_background"
             android:gravity="center_vertical"
             android:paddingLeft="30dp"
-            android:text="Download the MovieCash application."
+            android:text="Download the Phala application."
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -65,7 +65,7 @@
             android:background="@drawable/help_list_background"
             android:gravity="center_vertical"
             android:paddingLeft="30dp"
-            android:text="Open MovieCash Millionaire daily on time to join live quiz."
+            android:text="Open Phala Millionaire daily on time to join live quiz."
             android:textColor="@color/white"
             android:textSize="14sp" />
 

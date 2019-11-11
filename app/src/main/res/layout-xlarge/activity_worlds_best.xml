@@ -585,7 +585,7 @@
             android:shadowDx="4"
             android:shadowDy="4"
             android:shadowRadius="4"
-            android:text="&#11044;   MILLION $ Opportunity, MILLION  $ contracts!\n&#11044;   Gateway to Hollywood / Bollywood, Modeling, Hosting.\n&#11044;   Be A Celebrity &amp; change your life.\n&#11044;   Junomoneta USA &amp; M Burmawala ( Abbas Masatan Films Chief Asst. Director ), Ruben Stir, Romania."
+            android:text="&#11044;   MILLION $ Opportunity, MILLION  $ contracts!\n&#11044;   Gateway to Hollywood / Bollywood, Modeling, Hosting.\n&#11044;   Be A Celebrity &amp; change your life.\n&#11044;   Junomoneta USA &amp; M Burmawala ( Abbas Masatan Films Chief Asst. Director ), Ruben Stir."
             android:textColor="@color/white"
             android:textSize="18sp" />
 

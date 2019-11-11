@@ -18,24 +18,24 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="90dp"
         android:gravity="center"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal" />
 
 
     <jonomoneta.juno.moviecash.CustomTextView
         android:id="@+id/btnDone"
         android:layout_width="wrap_content"
-        android:layout_height="55dp"
-        android:gravity="center"
-        android:paddingRight="30dp"
-        android:paddingLeft="30dp"
-        android:foreground="?attr/selectableItemBackground"
+        android:layout_height="65dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/btn_background"
-        android:text="DONE"
-        android:visibility="gone"
-        android:textSize="24sp"
         android:layout_marginBottom="30dp"
-        android:textColor="@android:color/white" />
+        android:background="@drawable/background_with_border_large"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="DONE"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:visibility="gone" />
 
 </RelativeLayout>

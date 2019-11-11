@@ -18,8 +18,7 @@ public class RetrofitAdapter {
 //    live: "http://arjuntours.co.in
 //    private static String BASE_URL = "http://192.168.0.3:81/api/";
     private static String BASE_URL = "https://moviecashapi.junomoneta.io/api/ApplicationApi/";
-    private static String BASE_URL_PLACE = "https://maps.googleapis.com/maps/api/place/nearbysearch/";
-    String nearBySearchAPIKey = "AIzaSyDilAKJ_vJ3rCCxR34RsEa2nyK3S2h6gL0";
+    private static String BASE_URL_PLACE = "https://maps.googleapis.com/maps/api/place/search/";
 
     private static String BASE_URL_VIDEO = "http://3edc5f2d.ngrok.io/api/ApplicationApi/";
 

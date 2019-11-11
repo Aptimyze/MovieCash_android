@@ -9,13 +9,6 @@ import android.graphics.Matrix;
 import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
@@ -26,22 +19,20 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
-import java.io.File;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import de.hdodenhof.circleimageview.CircleImageView;
-import jonomoneta.juno.moviecash.Adapter.CategoryAdapter;
 import jonomoneta.juno.moviecash.CustomEditText;
 import jonomoneta.juno.moviecash.CustomRadioButton;
 import jonomoneta.juno.moviecash.CustomTextView;
 import jonomoneta.juno.moviecash.ImageFilePath;
-import jonomoneta.juno.moviecash.Model.Response.MovieTypesResponse;
 import jonomoneta.juno.moviecash.Model.Response.UserDetailsResponse;
 import jonomoneta.juno.moviecash.MyApplication;
 import jonomoneta.juno.moviecash.PreferenceSettings;
@@ -55,13 +46,10 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static jonomoneta.juno.moviecash.Activity.ProfileActivity.editProf;
-import static jonomoneta.juno.moviecash.Adapter.CategoryAdapter.selectedTypeArray;
 
 public class EditProfileActivity extends AppCompatActivity {
 
     private CustomTextView bDateTextView;
-    private ArrayList<MovieTypesResponse.ResponseData> movieTypesList;
-    private RecyclerView categoryGridView;
     private ImageView backBtn, btnDone, calendarBtn, pickImgBtn;
     private Calendar myCalendar;
     private CircleImageView profileImageView;
@@ -91,7 +79,6 @@ public class EditProfileActivity extends AppCompatActivity {
         backBtn = findViewById(R.id.backBtn);
         btnDone = findViewById(R.id.btnDone);
         calendarBtn = findViewById(R.id.calendarBtn);
-        categoryGridView = findViewById(R.id.categoryGridView);
         bDateTextView = findViewById(R.id.bDateTextView);
         pickImgBtn = findViewById(R.id.pickImgBtn);
         profileImageView = findViewById(R.id.profileImageView);
@@ -102,32 +89,6 @@ public class EditProfileActivity extends AppCompatActivity {
         refView = findViewById(R.id.refView);
         maleRadioBtn = findViewById(R.id.maleRadioBtn);
         femaleRadioBtn = findViewById(R.id.femaleRadioBtn);
-
-//        maleRadioBtn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-//                if (b){
-//                    maleRadioBtn.setTextColor(getResources().getColor(R.color.black));
-//                } else {
-//                    maleRadioBtn.setTextColor(getResources().getColor(R.color.white));
-//                }
-//            }
-//        });
-//
-//        femaleRadioBtn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-//                if (b){
-//                    femaleRadioBtn.setTextColor(getResources().getColor(R.color.black));
-//                } else {
-//                    femaleRadioBtn.setTextColor(getResources().getColor(R.color.white));
-//                }
-//            }
-//        });
-
-        categoryGridView.setLayoutManager(new GridLayoutManager(this, 2));
-        categoryGridView.setItemAnimator(new DefaultItemAnimator());
-        categoryGridView.setNestedScrollingEnabled(false);
 
         isNewUser = getIntent().getBooleanExtra("isNewUser", false);
 
@@ -191,19 +152,6 @@ public class EditProfileActivity extends AppCompatActivity {
 
         } catch (Exception e) {
             Log.e("excptn", e.getMessage());
-        }
-
-        movieTypesList = new ArrayList<>();
-        if (mPreferenceSettings.getMovieTypes() != null) {
-            if (mPreferenceSettings.getMovieTypes().getResponseData() != null &&
-                    mPreferenceSettings.getMovieTypes().getResponseData().size() > 0) {
-                movieTypesList = mPreferenceSettings.getMovieTypes().getResponseData();
-                CategoryAdapter categoryAdapter = new CategoryAdapter(EditProfileActivity.this, movieTypesList, selectedType, true);
-                categoryGridView.setAdapter(categoryAdapter);
-                categoryAdapter.notifyDataSetChanged();
-            }
-        } else {
-            getMovieTypeAPI();
         }
 
         backBtn.setOnClickListener(new View.OnClickListener() {
@@ -285,33 +233,6 @@ public class EditProfileActivity extends AppCompatActivity {
                             android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                     startActivityForResult(pickPhoto, 1);
                 }
-            }
-        });
-    }
-
-
-    private void getMovieTypeAPI() {
-
-        RetroInterface retroInterface = RetrofitAdapter.retrofit.create(RetroInterface.class);
-        final PreferenceSettings mPreferenceSettings = MyApplication.getInstance().getPreferenceSettings();
-        Call<MovieTypesResponse> getMovieTypes = retroInterface.getMovieTypes();
-        getMovieTypes.enqueue(new Callback<MovieTypesResponse>() {
-            @Override
-            public void onResponse(Call<MovieTypesResponse> call, Response<MovieTypesResponse> response) {
-                if (response.body().getResponseCode().equalsIgnoreCase("SUCCESS")) {
-                    mPreferenceSettings.setMovieTypes(response.body());
-                    if (response.body().getResponseData().size() > 0) {
-                        movieTypesList = response.body().getResponseData();
-                        CategoryAdapter categoryAdapter = new CategoryAdapter(EditProfileActivity.this, movieTypesList, selectedType, true);
-                        categoryGridView.setAdapter(categoryAdapter);
-                        categoryAdapter.notifyDataSetChanged();
-                    }
-                }
-            }
-
-            @Override
-            public void onFailure(Call<MovieTypesResponse> call, Throwable t) {
-                Log.e("movieTypesFailure", t.getMessage());
             }
         });
     }
@@ -418,12 +339,6 @@ public class EditProfileActivity extends AppCompatActivity {
         }
 
         String modieTypeIds = "";
-        for (int i = 0; i < selectedTypeArray.size(); i++) {
-            modieTypeIds += selectedTypeArray.get(i);
-            if (i < (selectedTypeArray.size() - 1)) {
-                modieTypeIds += ",";
-            }
-        }
         String refCode = "";
         if (refferalCodeEditText.getText().toString().trim().length() > 0) {
             refCode = refferalCodeEditText.getText().toString().trim();

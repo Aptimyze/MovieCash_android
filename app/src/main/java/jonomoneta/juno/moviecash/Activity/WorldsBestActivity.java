@@ -1792,43 +1792,6 @@ public class WorldsBestActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 addVideoCategoryTV.setText("#" + catName);
                 fileUri = data.getData();
-//                if (fileUri.toString().contains("image")) {
-//                    //handle image
-//                    Toast.makeText(this, "Please select video.", Toast.LENGTH_SHORT).show();
-////                    if (lastSelectedUri != null) {
-////                        if (videoView != null) {
-////                            videoView.setMediaController(mediaControls);
-////                            videoView.setVideoURI(lastSelectedUri);
-////                            videoView.requestFocus();
-////                            videoView.start();
-////
-////                            updateUI(add);
-////
-////                            videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-////                                @Override
-////                                public void onCompletion(MediaPlayer mp) {
-////                                    videoView.start();
-////                                }
-////                            });
-////                        }
-////                    }
-//                } else if (fileUri.toString().contains("video")) {
-//                    //handle video
-////                    lastSelectedUri = selectedMediaUri;
-//                    videoPath = ImageFilePath.getPath(WorldsBestActivity.this, fileUri);
-//                    //                        videoBase64 = convertFileToBase64(videoPath);
-//                    Log.e("videoFilePath", videoPath);
-////                        Log.e("videoBase64", videoBase64);
-//
-//                    if (videoView != null) {
-//                        videoView.setMediaController(mediaControls);
-//                        videoView.setVideoURI(fileUri);
-//                        videoView.requestFocus();
-//                        videoView.start();
-//
-//                        updateUI(add);
-//                    }
-//                }
 
                 ArrayList<VideoFile> list = data.getParcelableArrayListExtra(Constant.RESULT_PICK_VIDEO);
                 VideoFile videoFile = list.get(0);

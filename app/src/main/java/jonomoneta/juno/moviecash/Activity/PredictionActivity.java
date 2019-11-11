@@ -732,7 +732,7 @@ public class PredictionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String refCode = mPreferenceSettings.getUserDetails().getResponseData().getReferCode();
-                String shareBody = "I am playing and enjoying quiz on MovieCash! You should enjoy too. Use my code - *" + refCode + "* to sign up and earn rewards." + "\n\nGet app now:\nhttps://play.google.com/store/apps/details?id=movieosis.mdadil2019.movieosis";
+                String shareBody = "I am playing and enjoying quiz on Phala! You should enjoy too. Use my code - *" + refCode + "* to sign up and earn rewards." + "\n\nGet app now:\nhttps://play.google.com/store/apps/details?id=movieosis.mdadil2019.movieosis";
                 Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
                 sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
@@ -1631,10 +1631,10 @@ public class PredictionActivity extends AppCompatActivity {
 
         if (isPaidSubscription) {
             refferalCodeEditText.setVisibility(View.VISIBLE);
-            subs_descTV.setText("- Subscribe MovieCash Millionaire.\n- $ " + subscription_price + " / 3 month.");
+            subs_descTV.setText("- Subscribe Phala Millionaire.\n- $ " + subscription_price + " / 3 month.");
         } else {
             refferalCodeEditText.setVisibility(View.GONE);
-            subs_descTV.setText("- Subscribe MovieCash Millionaire.\n- 3 months subscription for FREE.");
+            subs_descTV.setText("- Subscribe Phala Millionaire.\n- 3 months subscription for FREE.");
         }
         closeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2918,7 +2918,7 @@ public class PredictionActivity extends AppCompatActivity {
                             }
                         });
 
-                        countTV.setText("MOVIECASH MILLIONAIRE");
+                        countTV.setText("PHALA MILLIONAIRE");
                         quizGameId = response.body().getResponseData().getID();
                         gameLevel = response.body().getResponseData().getQuizGameLevel();
                         if (response.body().getResponseData().getQuizGameType().equalsIgnoreCase("VIDEO")) {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MovieCash</string>
+    <string name="app_name">Phala</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -28,16 +28,12 @@
     <string name="get_started">Get Started</string>
     <string name="next">NEXT</string>
     <string name="promo_code">Have a Promo Code?</string>
-    <string name="desc_slider3">So you love watching movies, Why don\'t make your time more valuable by getting $ or equity while enjoying movies in theater!</string>
-    <string name="desc_slider1">Do you like watching movies?  Why don\'t watch them for earning $ or equity in theaters. Using MovieCash, you can watch movies in theater and earn $ or equity</string>
-    <string name="desc_slider2">Excited about trailers of your favorite movie?  Get all trailers of released and upcoming movies in your hands and earn money by watching them!</string>
 
-
-    <string name="slider_one_intro">Do you like watching movies? \n why don\'t watch them for earning $ or equity in theaters. Using MovieCash, you can watch movies in theater and earn $ or equity.</string>
-    <string name="slider_two_intro">Excited about trailers of your favorite movie? \n Get all trailers of released and upcoming movies in your hands and earn money by watching them!</string>
-    <string name="slider_three_intro">So you love watching movies, why don\'t make your time more valuable by getting $ or equity while enjoying movie in theater!</string>
+    <string name="slider_one_intro">Play quiz regularly everyday on\nyour mobile phone.</string>
+    <string name="slider_two_intro">Show your talent and be a global star.</string>
+    <string name="slider_three_intro">Check-in to your favorite place and get rewarded.</string>
     <string name="send_text">We will send text to verify your number.</string>
-    <string name="privacy_policy">By signing up, I confirm that I am over 18 years old, and I agree to MovieCash privacy policy and tearms of services.</string>
+    <string name="privacy_policy">By signing up, I confirm that I am over 18 years old, and I agree to Phala privacy policy and tearms of services.</string>
     <string name="enter_otp">Enter OTP</string>
     <string name="otp_desc"><![CDATA[Do you get an SMS OTP ? Enter it below & get start now.]]></string>
     <string name="resend_otp">Resend OTP ?</string>
@@ -61,5 +57,6 @@
     <string name="terms"><u>Terms</u></string>
     <string name="terms_of_use"><u>Terms of use</u></string>
     <string name="rules_req"><u>Rules &amp; Requirements</u></string>
-
+    <string name="google_maps_key">AIzaSyDhPmO4pRhqG5OkkWuBjsNONCM96fZJ-rQ</string>
+    <string name="place_api_key">AIzaSyBTElnCDsGtuxsIqBaMwZu0YrGAFGogTR0</string>
 </resources>

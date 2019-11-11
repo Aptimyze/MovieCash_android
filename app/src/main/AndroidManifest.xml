@@ -43,6 +43,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Activity.MapRewardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ScanQRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.RewardHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Activity.OfferNotificationActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -112,13 +121,7 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service
-            android:name=".services.HistoryService"
-            android:enabled="true">
 
-        </service>
-
-        <receiver android:name=".BroadCastReceiver" />
         <receiver android:name=".AlarmReceiver" />
 
         <activity
@@ -136,6 +139,14 @@
         <activity
             android:name=".Activity.WinnersActivity"
             android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/place_api_key" />
     </application>
 
 </manifest>

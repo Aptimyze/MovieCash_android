@@ -69,9 +69,10 @@ public class Utility {
     public static double worlds_best_subscription_charge_amount = 10;
     public static double worlds_best_subscription_charge_amount_for_judge = 150;
     public static double lotto_subscription_charge = 5;
-    public static String rules_link = "https://junomoneta.io/movie-cash/#MiniMovieCashMillionaireContestOfficialRules";
-    public static String terms_link = "https://junomoneta.io/movie-cash/#MiniMovieCashMillionaireTermsofUse";
-    public static String privacy_link = "https://junomoneta.io/movie-cash/#MiniMovieCashMillionairePrivacyPolicy";
+    public static int map_based_reward = 1;
+    public static String rules_link = "https://junomoneta.io/phala/#MiniMovieCashMillionaireContestOfficialRules";
+    public static String terms_link = "https://junomoneta.io/phala/#MiniMovieCashMillionaireTermsofUse";
+    public static String privacy_link = "https://junomoneta.io/phala/#MiniMovieCashMillionairePrivacyPolicy";
     public static String terms_link_lotto = "https://junomoneta.io/lottoterms";
     public static String privacy_link_lotto = "https://junomoneta.io/lottoprivacy";
 

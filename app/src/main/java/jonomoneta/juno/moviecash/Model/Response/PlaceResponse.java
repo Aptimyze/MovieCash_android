@@ -26,6 +26,10 @@ public class PlaceResponse implements Serializable {
         @Expose
         private Geometry geometry;
 
+        @SerializedName("icon")
+        @Expose
+        private String icon;
+
         @SerializedName("name")
         @Expose
         private String name;
@@ -41,6 +45,8 @@ public class PlaceResponse implements Serializable {
         @SerializedName("vicinity")
         @Expose
         private String vicinity;
+
+        private String distance;
 
         public String getName() {
             return name;
@@ -74,12 +80,28 @@ public class PlaceResponse implements Serializable {
             this.geometry = geometry;
         }
 
+        public String getIcon() {
+            return icon;
+        }
+
+        public void setIcon(String icon) {
+            this.icon = icon;
+        }
+
         public String getVicinity() {
             return vicinity;
         }
 
         public void setVicinity(String vicinity) {
             this.vicinity = vicinity;
+        }
+
+        public String getDistance() {
+            return distance;
+        }
+
+        public void setDistance(String distance) {
+            this.distance = distance;
         }
 
         public class Geometry implements Serializable{

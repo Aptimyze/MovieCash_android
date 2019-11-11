@@ -180,6 +180,8 @@ public class VerifyOTPActivity extends AppCompatActivity {
                         PhoneAuthCredential cred = PhoneAuthProvider.getCredential(mVerificationId, otpEditText.getText().toString().trim());
                         showProgress();
                         signInUser(cred);
+                    } else {
+                        Toast.makeText(VerifyOTPActivity.this, "Please enter OTP to verify.", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Utility.noInternetError(VerifyOTPActivity.this);

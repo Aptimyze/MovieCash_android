@@ -19,7 +19,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
-            app:srcCompat="@drawable/ic_back" />
+            android:src="@drawable/ic_back" />
 
         <jonomoneta.juno.moviecash.CustomTextViewBold
             android:layout_width="match_parent"

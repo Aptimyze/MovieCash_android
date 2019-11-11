@@ -51,12 +51,11 @@
 
 
             <ImageView
-                android:id="@+id/pollBtn"
+                android:id="@+id/qrBTN"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
-                android:padding="13dp"
-                android:src="@drawable/ic_qa"
-                android:visibility="gone" />
+                android:padding="12dp"
+                android:src="@drawable/ic_qr_code" />
 
             <ImageView
                 android:id="@+id/menuBtn"

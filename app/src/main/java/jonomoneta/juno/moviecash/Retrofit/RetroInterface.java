@@ -15,11 +15,14 @@ import jonomoneta.juno.moviecash.Model.Response.CommonResponse;
 import jonomoneta.juno.moviecash.Model.Response.CountryResponse;
 import jonomoneta.juno.moviecash.Model.Response.GenerateLottoClubResultResponse;
 import jonomoneta.juno.moviecash.Model.Response.GenerateQR;
+import jonomoneta.juno.moviecash.Model.Response.GetAdvertisementResponse;
 import jonomoneta.juno.moviecash.Model.Response.GetAllBestTalentBankVideosResponse;
 import jonomoneta.juno.moviecash.Model.Response.GetAllTalentBankVideosByUserResponse;
 import jonomoneta.juno.moviecash.Model.Response.GetCurrentLottoClubSelectedNoResponse;
+import jonomoneta.juno.moviecash.Model.Response.GetGoogleSearchLocationResponse;
 import jonomoneta.juno.moviecash.Model.Response.GetNextQuizGameDateTimeResponse;
 import jonomoneta.juno.moviecash.Model.Response.GetQuizGamePaymentPlanResponse;
+import jonomoneta.juno.moviecash.Model.Response.GetSearchLocationsTypesResponse;
 import jonomoneta.juno.moviecash.Model.Response.GetTalentCategoryListResponse;
 import jonomoneta.juno.moviecash.Model.Response.GetTheaterResponse;
 import jonomoneta.juno.moviecash.Model.Response.GettLottoClubRewardPlansResponse;
@@ -34,6 +37,7 @@ import jonomoneta.juno.moviecash.Model.Response.Prediction;
 import jonomoneta.juno.moviecash.Model.Response.QuizGameFreeSubscribeUserResponse;
 import jonomoneta.juno.moviecash.Model.Response.QuizPrizeListResponse;
 import jonomoneta.juno.moviecash.Model.Response.QuizResponse;
+import jonomoneta.juno.moviecash.Model.Response.RewardHistoryResponse;
 import jonomoneta.juno.moviecash.Model.Response.SaveAnswer;
 import jonomoneta.juno.moviecash.Model.Response.SaveQuizAnswerResponse;
 import jonomoneta.juno.moviecash.Model.Response.SaveUserTokenResponse;
@@ -145,14 +149,14 @@ public interface RetroInterface {
 
     @GET("json")
     Call<PlaceResponse> getPlaces(@Query("location") String location, @Query("radius") String radius,
-                                  @Query("keyword") String keyword, @Query("key") String key);
+                                  @Query("keyword") String keyword, @Query("type") String type, @Query("key") String key);
 
     @FormUrlEncoded
     @POST("SaveUserGPSTrackingHistory")
     Call<CommonResponse> saveHistory(@Field("userid") int userid, @Field("placename") String placename, @Field("placeid") String placeid,
-                                    @Field("latitude") String latitude, @Field("longitude") String longitude, @Field("address") String address,
-                                    @Field("types") String types, @Field("hours") int hours, @Field("minutes") int minutes,
-                                    @Field("seconds") int seconds);
+                                     @Field("latitude") String latitude, @Field("longitude") String longitude, @Field("address") String address,
+                                     @Field("types") String types, @Field("hours") int hours, @Field("minutes") int minutes,
+                                     @Field("seconds") int seconds);
 
     @GET("GetQuizGameByUsers")
     Call<QuizResponse> getQuizList(@Query("userid") int userid, @Query("countrycode") String countrycode, @Query("currentquizid") int currentquizid);
@@ -336,6 +340,30 @@ public interface RetroInterface {
     @POST("QuizGameFreeSubscribeUser")
     Call<QuizGameFreeSubscribeUserResponse> quizGameFreeSubscribeUser(@Field("userid") int userid);
 
+    @GET("GetRewardHistoryByUser")
+    Call<RewardHistoryResponse> getRewardHistory(@Query("userid") int userid);
+
+    @GET("GetAdvertisement")
+    Call<GetAdvertisementResponse> getAdvertisement(@Query("totalrecord") int totalrecord);
+
+    @GET("GetSearchLocationsTypes")
+    Call<GetSearchLocationsTypesResponse> getSearchLocationsTypes();
+
+    @FormUrlEncoded
+    @POST("SaveGoogleSearchLocation")
+    Call<CommonResponse> saveGoogleSearchLocation(@Field("searchtype") String searchtype,
+                                                  @Field(value = "searchlocationsjson", encoded = true) String searchlocationsjson);
+
+    @GET("GetGoogleSearchLocation")
+    Call<GetGoogleSearchLocationResponse> getGoogleSearchLocation(@Query("userid") int userid,
+                                                                  @Query("searchtype") String searchtype,
+                                                                  @Query("latitude") String latitude,
+                                                                  @Query("longitude") String longitude);
+
+    @FormUrlEncoded
+    @POST("SaveRewardLocation")
+    Call<CommonResponse> saveRewardLocation(@Field("userid") int userid, @Field("placeid") String placeid,
+                                            @Field("reward") int reward);
 }
 
 

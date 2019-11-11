@@ -7,10 +7,10 @@ android {
 
     defaultConfig {
         applicationId "movieosis.mdadil2019.movieosis"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 28
-        versionCode 69
-        versionName '4.3.4'
+        versionCode 86
+        versionName '4.5.1'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
 
@@ -42,10 +42,12 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0-beta01'
-    implementation 'com.google.firebase:firebase-core:16.0.5'
-    implementation 'com.google.firebase:firebase-messaging:17.3.4'
-    implementation 'com.google.firebase:firebase-auth:16.0.5'
-    implementation 'com.google.firebase:firebase-database:16.0.5'
+    implementation 'com.google.firebase:firebase-core:17.2.0'
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.1.0'
+    implementation 'com.google.firebase:firebase-database:19.1.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
     implementation 'co.lujun:androidtagview:1.1.4'
     implementation files('libs/YouTubeAndroidPlayerApi.jar')
     implementation 'com.github.hassanusman:CircularDialogs:1.2'

@@ -70,7 +70,7 @@
                 android:lineSpacingExtra="9dp"
                 android:paddingLeft="35dp"
                 android:paddingRight="35dp"
-                android:text="- Subscribe MovieCash Millionaire.\n- $ 10 / month."
+                android:text="- Subscribe Phala Millionaire.\n- $ 10 / month."
                 android:textColor="@color/grey"
                 android:textSize="24sp" />
 

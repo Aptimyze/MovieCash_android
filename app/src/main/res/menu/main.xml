@@ -25,5 +25,13 @@
         android:icon="@drawable/redeem_black"
         android:title="Redeem" />
 
+    <item
+        android:id="@+id/action_reward"
+        android:icon="@drawable/ic_gift"
+        android:title="Earn Rewards" />
 
+    <item
+        android:id="@+id/action_history"
+        android:icon="@drawable/ic_history_black"
+        android:title="Reward History" />
 </menu>

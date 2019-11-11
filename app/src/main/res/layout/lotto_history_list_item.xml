@@ -43,6 +43,7 @@
         android:paddingLeft="10dp">
 
         <jonomoneta.juno.moviecash.CustomTextViewBold
+            android:id="@+id/reasonTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"

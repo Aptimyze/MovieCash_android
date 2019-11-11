@@ -38,6 +38,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
 import jonomoneta.juno.moviecash.CustomTextView;
 import jonomoneta.juno.moviecash.CustomTextViewBold;
 import jonomoneta.juno.moviecash.Fragment.LottoFragment;
@@ -50,7 +51,7 @@ import jonomoneta.juno.moviecash.Retrofit.RetroInterface;
 import jonomoneta.juno.moviecash.Retrofit.RetrofitAdapter;
 import jonomoneta.juno.moviecash.Utils.PermissionUtils;
 import jonomoneta.juno.moviecash.Utils.Utility;
-import jonomoneta.juno.moviecash.services.HistoryService;
+import jonomoneta.juno.moviecash.services.GPSTracker;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayout talentLL, quizLL, profileLL;
     private CustomTextView titleTextView;
     public static boolean fromAd = false, fromFilter = false;
-    private ImageView menuBtn;
+    private ImageView menuBtn, qrBTN;
     private Animation slideAnim, slideOut;
     public static String categoryid = "", typeids = "", languageid = "", releasedate = "", countryid = "";
     private PreferenceSettings mPreferenceSettings;
@@ -198,8 +199,6 @@ public class MainActivity extends AppCompatActivity {
             new GooglePlayStoreAppVersionNameLoader().execute();
         }
 
-        startService(new Intent(MainActivity.this, HistoryService.class));
-
         fromOffer = getIntent().getBooleanExtra("fromOffer", false);
         mPreferenceSettings.setFilterGeneres(null);
         mPreferenceSettings.setFilterCategory(0);
@@ -217,6 +216,7 @@ public class MainActivity extends AppCompatActivity {
         talentLL = findViewById(R.id.talentLL);
         quizLL = findViewById(R.id.quizLL);
         menuBtn = findViewById(R.id.menuBtn);
+        qrBTN = findViewById(R.id.qrBTN);
         profileLL = findViewById(R.id.profileLL);
 
         titleTextView.setText("Location Base Frequent Rewards");
@@ -233,6 +233,13 @@ public class MainActivity extends AppCompatActivity {
         if (fromOffer) {
             viewPager.setCurrentItem(2);
         }
+
+        qrBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ScanQRActivity.class));
+            }
+        });
 
         tabLayout.addOnTabSelectedListener(new TabLayout.BaseOnTabSelectedListener() {
             @Override
@@ -320,6 +327,16 @@ public class MainActivity extends AppCompatActivity {
                                 break;
                             case R.id.action_redeem:
                                 startActivity(new Intent(MainActivity.this, RedeemActivity.class));
+                                break;
+                            case R.id.action_reward:
+                                if (Utility.isOnline(MainActivity.this)) {
+                                    startActivity(new Intent(MainActivity.this, MapRewardActivity.class));
+                                } else {
+                                    Utility.noInternetError(MainActivity.this);
+                                }
+                                break;
+                            case R.id.action_history:
+                                startActivity(new Intent(MainActivity.this, RewardHistoryActivity.class));
                                 break;
                         }
                         return true;

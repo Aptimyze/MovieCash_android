@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/iconIV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/marker_large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <jonomoneta.juno.moviecash.CustomTextViewBold
+                android:id="@+id/nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <jonomoneta.juno.moviecash.CustomTextView
+                android:id="@+id/distanceTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="distance"
+                android:textColor="@color/light_grey"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/light_grey" />
+
+</LinearLayout>

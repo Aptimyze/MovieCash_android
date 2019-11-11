@@ -114,7 +114,7 @@ public class RefferalActivity extends AppCompatActivity {
         btnInvite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String shareBody = "I am playing and enjoying quiz on MovieCash! You should enjoy too. Use my code - *" + refCode + "* to sign up and earn rewards." + "\n\nGet app now:\nhttps://play.google.com/store/apps/details?id=movieosis.mdadil2019.movieosis";
+                String shareBody = "I am playing and enjoying quiz on Phala! You should enjoy too. Use my code - *" + refCode + "* to sign up and earn rewards." + "\n\nGet app now:\nhttps://play.google.com/store/apps/details?id=movieosis.mdadil2019.movieosis";
                 Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
                 sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
